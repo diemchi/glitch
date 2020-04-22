@@ -1,0 +1,9 @@
+h3 To do list
+
+a(href="/todos/create", style="display:inline-block; padding-bottom:10px") Create todo
+form(action="/todos/search", method="GET")
+  input(type="text", name="q")
+  button Search
+ul
+  each todo in todos
+    li= todo.item
